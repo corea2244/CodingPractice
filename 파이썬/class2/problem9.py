@@ -10,4 +10,7 @@ for i in range(wordCount):
     wordList.append(input())
 
 newWordList = list(set(wordList))
-print(sorted(newWordList))
+newWordList = sorted(newWordList)
+newWordList.sort(key=len)
+for i in range(len(newWordList)):
+    print(newWordList[i])
